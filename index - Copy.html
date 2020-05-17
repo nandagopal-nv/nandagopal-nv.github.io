@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nandagopal N V</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<style type="text/css">
+		:root 
+		{
+  			--main-bg-color: coral; 
+  			--pp-purple: #861a54;
+			--pp-blue: #054f7d;
+			--pp-ltblue: #00a7cf;
+			--sp-yellow: #efe348;
+
+		}
+		
+		body
+		{
+			background-image: linear-gradient(to right, var(--pp-ltblue),var(--pp-ltblue),var(--sp-yellow),var(--pp-purple),var(--pp-blue));
+			background-size: 600%;
+  			background-position: 0 0;
+  			animation-duration: 20s;
+  			animation-iteration-count: infinite;
+  			/*animation-name: gradients;*/
+  			padding: 0;
+			font-family: "Segoe UI", sans-serif;
+		}
+		@keyframes gradients 
+		{
+			0%    {background-position: 0 0;}
+			25%   {background-position: 50% 0;}
+			50%   {background-position: 90% 0;}
+			60%   {background-position: 60%;}
+			75%   {background-position: 40%;}
+			100%  {background-position: 0 0;}
+		}
+		.profilepic
+		{
+			border-radius: 50%;
+			height: 20vh;
+			width: 20vh;
+			margin: 30px auto;
+			background-image: url("nandos.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
+			transition-duration: 0.25s;
+			/*position: sticky;*/
+			top: 5vh;
+			z-index: 2;
+			/*border: 2px solid rgba(255,255,255,0);*/
+
+		}
+		.profilepic:hover
+		{
+			box-shadow: 0 0px 40px rgba(0,0,0,0.5), 0 0px 20px rgba(0,0,0,0.22);
+			height: 20.5vh;
+			width: 20.5vh;
+			/*border: 2px solid rgba(255,255,255,1);*/
+
+		}
+		.maincontent
+		{
+			max-width: 90vh;
+			/*border: 2px solid white;*/
+			margin: auto;
+			text-align: center;
+		}
+		.profilecard
+		{
+			max-width: 90vh;
+			/*border: 2px solid white;*/
+			margin: auto;
+			text-align: center;
+			/*position: sticky;*/
+			top: 0px;
+		}
+		.nametag
+		{
+			font-size: 5vh;
+			/*color: white;*/
+			font-weight: 100;
+			/*border: 1px solid white;*/
+			padding: 10px;
+			/*position: sticky;*/
+			top: 1vh;
+		}
+		.interestag
+		{
+			border-radius: 100px;
+			padding: 0.8vh 1vh;
+			font-size: 1.5vh;
+  			background-color: rgba(0,0,0,0.2);
+  			display: inline-block;
+  			margin: 2px;
+  			/*font-weight: bold;*/
+			border: 1px solid white;
+
+			/*position: sticky;*/
+			top: 7vh;
+
+  			color: #fff;
+		}
+		.whitepanel
+		{
+			background-color: white;
+			border-radius: 20px;
+			width: 100%;
+			box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
+			padding: 20px;
+			margin: 20px 0px;
+			z-index: 5;
+			height: 200vh;
+		}
+		.sidenav
+		{
+			display: inline-block;
+			position: fixed;
+			top: 40vh;
+			left: 0vh;
+			/*border: 2px solid white;*/
+			width: 30vh;
+			text-align: left;
+		}
+		.sidenavitem
+		{
+			padding: 5px 20px;
+			/*margin: 5px 0px;*/
+			font-size: 32px;
+			/*background: rgba(255,255,255,0.2);*/
+			/*border-radius: 50px;*/
+			border-top-right-radius: 50px;
+			border-bottom-right-radius: 50px;
+			text-align: left;
+			transition-duration: 0.5s;
+			padding: 20px;
+
+			display: inline-block;
+
+		}
+		.sidenavitem:hover
+		{
+			background: rgba(255,255,255,0.8);
+			box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
+			/*padding: 20px;*/
+			padding-left: 40px;
+			/*font-weight: bold;*/
+		}
+		.sidenavitem i
+		{
+
+			transition-duration: 0.5s;
+			color: white;
+		}
+
+		.sidenavitem:hover i
+		{
+			color: #00a4ef;
+		}
+	</style>
+</head>
+<body>
+	<div class="maincontent">
+		<div class="profilepic"></div>
+		<div class="nametag">Nandagopal N V</div>
+		<div class="interestag">Artificial Intelligence</div>
+		<div class="interestag">Machine Learning</div>
+		<div class="interestag">Cloud Computing</div>
+		<div class="whitepanel">
+			hi
+		</div>
+		<div class="sidenav">
+			<div class="sidenavitem">
+				<i class="material-icons">alternate_email</i>
+				About Me
+			</div>
+			<div class="sidenavitem" style="
+			border-left: 5px solid white; background: rgba(255,255,255,0.2);">
+				<i class="material-icons">work_outline</i>
+				Experience
+			</div>
+			<div class="sidenavitem">
+				<i class="material-icons">widgets</i>
+				Projects
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>
