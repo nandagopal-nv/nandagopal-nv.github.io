@@ -33,9 +33,16 @@
 		{
 			width: 100vw;
 			height: 50vw;
-			/*background-image: url("skillzb.jpg");*/
-			background-color: rgb(200,200,200);
-			background-size: cover;
+			/*background-image: url("blurred-bg2.jpg");*/
+			/*background-repeat: no-repeat;*/
+			/*background-color: rgb(200,200,200);*/
+			background: linear-gradient(to right, rgba(0,0,0,0) 20%,
+              rgba(100,100,100,1)), url(blurred-bg2.jpg);
+
+  			box-shadow: inset -80vw 0 10vw 0 #333;
+  			background-repeat: no-repeat;
+  			background-position: left;
+			background-size: contain;
 			overflow: hidden;
 		}
 		.thumb
@@ -869,6 +876,24 @@
 			height: 13rem;
 			/*width: 30rem;*/
 		}
+		.aboutme
+		{
+			/*display: inline-block;*/
+			width: 25rem;
+			margin: auto;
+			margin-top: 5rem;
+			/*border: 2px solid red;*/
+			padding: 2rem;
+			color: white;
+			font-size: 2rem;
+			font-weight: lighter;
+		}
+		.aboutmeheading
+		{
+			color: rgb(255,50,255);
+			font-size: 1rem;
+			font-weight: bold; 
+		}
 	</style>
 </head>
 <body>
@@ -876,7 +901,7 @@
 		<div class="card" onmouseenter ="toggleCard(1);" onmouseleave ="toggleCard(-1);">
 			<div class="title">
 				<div style="display: inline-block; vertical-align: top; margin: 0rem;">
-					<span style="font-size:3.5rem;">Nandagopal N V
+					<span style="font-size:3.5rem;"> N V Nandagopal
 					</span>
 					<br>
 					Computer Science Undergrad
@@ -890,7 +915,12 @@
 		</div>
 		<div class="thumb" onclick="toggleCard();" onmouseenter ="toggleCard(1);" onmouseleave ="toggleCard(-1);">
 		</div>
-		<div class="summarycontainer" style="filter: blur(0px);">
+		<div class="aboutme">
+			<div class="message">Hi there!</div>
+			<br><br>
+			<div class="aboutmeheading">OBJECTIVE</div>
+		Seeking an opportunity with a company or research institution that would let me develop my skills and gain experience in fields like Artificial Intelligence, Machine Learning, Computer Vision, Distributed Computing and Software Development, while working with a team of like-minded individuals to contribute towards impactful technology. </div>
+		<div class="summarycontainer" style="filter: blur(0px); display: none;">
 			<div class="summaryheading">
 				<i class="material-icons">equalizer</i>
 				<div class="summarysubheading">Skills</div>
