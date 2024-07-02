@@ -856,18 +856,18 @@
 		}
 		.card
 		{
-			margin: 2rem;
+			margin: 1rem;
 			position: fixed;
-			right: 0rem;
-			top: 7rem;
+			right: 6.5rem;
+			top: 0rem;
 			border-radius: 1rem;
-			padding: 1rem;
+			padding: 0.5rem;
 			/*padding-right: 5rem;*/
 			box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
 			/*//blur*/
 			background-color: rgba(0,0,0,0.5);
 			transition-duration: 0.5s;
-			overflow: hidden;
+			/* overflow: hidden; */
 			/*background-color: rgba(75,75,75,0.5);*/
 			backdrop-filter: blur(10px);
   			-webkit-backdrop-filter: blur(10px);
@@ -875,7 +875,7 @@
   			border: 1px solid rgba(255,255,255,0.1);
 			z-index: 8;
 			display: inline-block;
-			height: 13rem;
+			/* height: 5rem; */
 			/*width: 30rem;*/
 		}
 		.aboutme
@@ -887,7 +887,7 @@
 			/*border: 2px solid red;*/
 			padding: 2rem;
 			color: white;
-			font-size: 2rem;
+			font-size: 1.5rem;
 			font-weight: lighter;
 		}
 		.aboutmeheading
@@ -900,19 +900,19 @@
 </head>
 <body>
 	<div class="cover">	
-		<div class="card" onmouseenter ="toggleCard(1);" onmouseleave ="toggleCard(-1);">
+		<div class="card">
 			<div class="title">
 				<div style="display: inline-block; vertical-align: top; margin: 0rem;">
-					<span style="font-size:3.5rem;"> N V Nandagopal
+					<span style="font-size:1.5rem;"> N V Nandagopal
 					</span>
 					<br>
-					Computer Science Undergrad
+					<span style="font-size: 1rem;">Software Developement Engineer</span>
 					<br>
 				</div>
 			</div>
 			<div class="contactdetails">
-				<div style="margin-bottom: 0.8rem">gopi.nv6@gmail.com</div>
-				<a href="https://www.linkedin.com/in/nandagopal-nv/" style="padding: 0.25rem 0.5rem; border-radius: 0.5rem;  background-color: rgba(255,255,255,0.5);">www.linkedin.com/in/nandagopal-nv/</a>
+				<div style="margin-bottom: 0.8rem; font-size: 1rem;">gopi.nv6@gmail.com</div>
+				<a href="https://www.linkedin.com/in/nandagopal-nv/" style="padding: 0.5rem 0.5rem; border-radius: 0.5rem;  background-color: rgba(0,0,0,0.5); font-size: 1rem;">www.linkedin.com/in/nandagopal-nv/</a>
 			</div>
 		</div>
 		<div class="thumb" onclick="toggleCard();" onmouseenter ="toggleCard(1);" onmouseleave ="toggleCard(-1);">
@@ -1112,9 +1112,22 @@
 			<div class="experiencegrid">
 				<div class="logoexp" style="background-image: url('hpe.jpg');"></div>
 				<div class="experience">
-					<div class="titleexp">System Software Engineer</div>
+					<div class="titleexp">Systems Software Engineer - 2</div>
 					<div class="datecontainer">
-						<div class="date">Nov 2020 - Present</div>
+						<div class="date">July 2022 - Present</div>
+					</div>
+					<div class="company">Hewlett Packard Enterprise</div>
+						<div class="desc">
+							Software engineer in an agile team working in cloud-based management software for servers. Working to enable HPE Greenlake for Compute Ops Management on HPE Synergy and HPE ProLiant servers.  
+					</div>
+				</div>
+			</div>	
+			<div class="experiencegrid">
+				<div class="logoexp" style="background-image: url('hpe.jpg');"></div>
+				<div class="experience">
+					<div class="titleexp">Systems Software Engineer</div>
+					<div class="datecontainer">
+						<div class="date">Nov 2020 - July 2022</div>
 					</div>
 					<div class="company">Hewlett Packard Enterprise</div>
 						<div class="desc">Software engineer in an agile team working on server Baseboard Management Controller (BMC) software. Working on open standards like DMTF's Redfish standard for management of converged, hybrid IT and Software Defined Data Centers(SDDC).  
