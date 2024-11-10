@@ -39,9 +39,9 @@
 			/*background-repeat: no-repeat;*/
 			/*background-color: rgb(200,200,200);*/
 			background: linear-gradient(to right, rgba(0,0,0,0) 20%,
-              rgba(100,100,100,1)), url(blurred-bg2.jpg);
+              rgba(100,100,100,1)), url(photo.jfif);
 
-  			box-shadow: inset -80vw 0 10vw 0 #333;
+  			box-shadow: inset -80vw 0 10vw 0 #123014;
   			background-repeat: no-repeat;
   			background-position: left;
 			background-size: contain;
@@ -52,8 +52,8 @@
 			height: 5vw;
 			width: 5vw;
 			border-radius: 10vw;
-			border: 4px solid rgba(255,0,255,1);
-			box-shadow: 0 0px 10px rgba(255,0,255,0.5), 0 0px 10px rgba(0,0,0,0.8);
+			border: 4px solid rgb(30, 97, 24);
+			box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5), 0 0px 10px rgba(0,0,0,0.8);
 			background-image: url("DP2.jpeg");
 			background-size: cover;
 			position: fixed;
@@ -87,8 +87,8 @@
 		}
 		.message
 		{
-			background-color: rgb(255,50,255);
-			color: white;
+			background-color: rgb(146, 252, 120);
+			color: rgb(0, 0, 0);
 			border-radius: 20px;
 			padding: 10px;
 			border-top-left-radius: 5px;
@@ -454,7 +454,7 @@
 			border-radius: 10px;
 			/*border-left: 2vh solid rgba(0,0,0,0.3);*/
 			/*margin: 10%;*/
-			padding: 0.5rem;
+			padding: 1rem;
 			box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
 			/*//blur*/
 			background-color: rgba(0,0,0,0.3);
@@ -529,7 +529,7 @@
 		.experience .desc
 		{
 			grid-area: desc;
-			font-size: 0.8rem;
+			font-size: 1rem;
 		}
 		.project
 		{
@@ -588,7 +588,7 @@
 			margin: 1vh;
 			/*border: 2px solid red;*/
 			width: 100%;
-			height: 10rem;
+			/* height: 10rem; */
 			display: inline-grid;
 			box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);	
 			overflow: hidden;
@@ -644,7 +644,7 @@
 		{
 			display: block;
 			float: left;
-			font-size: 0.8rem;
+			font-size: 1rem;
 			padding: 0.25rem;
 		}
 		.project-cover
@@ -858,7 +858,7 @@
 		{
 			margin: 1rem;
 			position: fixed;
-			right: 6.5rem;
+			right: 6rem;
 			top: 0rem;
 			border-radius: 1rem;
 			padding: 0.5rem;
@@ -881,19 +881,22 @@
 		.aboutme
 		{
 			/*display: inline-block;*/
-			width: 25rem;
-			margin: auto;
-			margin-top: 5rem;
+			/* width: 25rem; */
+			max-width: 70%;
+			/* margin: auto; */
+			margin-left: 25%;
+			margin-top: 7rem;
 			/*border: 2px solid red;*/
-			padding: 2rem;
+			padding: 0rem 0rem 2rem 3rem;
 			color: white;
 			font-size: 1.5rem;
 			font-weight: lighter;
 		}
 		.aboutmeheading
 		{
-			color: rgb(255,50,255);
+			color: rgb(150, 245, 95);
 			font-size: 1rem;
+			padding: 2rem 0 1rem 0;
 			font-weight: bold; 
 		}
 	</style>
@@ -903,25 +906,23 @@
 		<div class="card">
 			<div class="title">
 				<div style="display: inline-block; vertical-align: top; margin: 0rem;">
-					<span style="font-size:1.5rem;"> N V Nandagopal
+					<span style="font-size:1.5rem;"> <b>Nandagopal N V</b>
 					</span>
 					<br>
-					<span style="font-size: 1rem;">Software Developement Engineer</span>
+					<span style="font-size: 1rem;">Cloud Engineer</span>
 					<br>
 				</div>
 			</div>
 			<div class="contactdetails">
-				<div style="margin-bottom: 0.8rem; font-size: 1rem;">gopi.nv6@gmail.com</div>
-				<a href="https://www.linkedin.com/in/nandagopal-nv/" style="padding: 0.5rem 0.5rem; border-radius: 0.5rem;  background-color: rgba(0,0,0,0.5); font-size: 1rem;">www.linkedin.com/in/nandagopal-nv/</a>
+				<div style="margin-bottom: 0rem; font-size: 1rem;">nandagopal.netrakanti@gmail.com</div>
+				<a href="https://www.linkedin.com/in/nandagopal-nv/" style="font-size: 1rem; color: #00f57b;">www.linkedin.com/in/nandagopal-nv/</a>
 			</div>
 		</div>
 		<div class="thumb" onclick="toggleCard();" onmouseenter ="toggleCard(1);" onmouseleave ="toggleCard(-1);">
 		</div>
 		<div class="aboutme">
-			<div class="message">Hi there!</div>
-			<br><br>
 			<div class="aboutmeheading">OBJECTIVE</div>
-		Seeking an opportunity with a company or research institution that would let me develop my skills and gain experience in fields like Artificial Intelligence, Machine Learning, Computer Vision, Distributed Computing and Software Development, while working with a team of like-minded individuals to contribute towards impactful technology. </div>
+			Seeking an opportunity that would let me develop my skills and gain experience in fields like <b>Cloud Engineering, Software Archicture & Design, Artificial Intelligence,</b> while working with a team of like-minded individuals to contribute towards impactful technology. </div>
 		<div class="summarycontainer" style="filter: blur(0px); display: none;">
 			<div class="summaryheading">
 				<i class="material-icons">equalizer</i>
@@ -959,7 +960,7 @@
 	</div>
 	<div class="navbar">
 		<div style="position: relative; top: 50%; transform: translateY(-50%); ">
-			<div class="navbaritem" id="about" onclick="function(){document.querySelector('#aboutsection').scrollIntoView({behavior : 'smooth'});}">
+			<div class="navbaritem" id="about" onclick="(function(){document.querySelector('body').scrollIntoView({behavior : 'smooth'});})();return false;">
 				<div>
 					<i class="material-icons">info</i>
 				</div>
@@ -1687,13 +1688,13 @@ I am responsible for the development of the complete stack required for creating
 			card = document.querySelector(".card");	
 			if(cardOpen==true)
 			{
-				card.style.height = "0";
+				card.style.height = "8rem";
 				card.style.opacity = "0";
 				cardOpen = false;
 			}
 			else
 			{
-				card.style.height = "13rem";
+				card.style.height = "9rem";
 				card.style.opacity = "1";
 				cardOpen = true;
 			}
