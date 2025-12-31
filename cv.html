@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nandagopal N V - CV</title>
     <style>
@@ -16,7 +18,7 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 10px;
         }
         nav {
             position: fixed;
@@ -127,11 +129,89 @@
         .name-card {
             display: none;
         }
+        .heading {
+            margin: auto;
+            margin-left: -5rem;
+            font-size: 6rem;
+            font-weight: 700;
+            text-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
+            color: rgba(0,0,0,0.7);
+            text-align: center;
+        }
+        .heading i {
+            background-color: rgba(255,255,255,1);
+            padding: 1rem;
+            font-size: 4rem;
+            border-radius: 10rem;
+            margin: 0.5rem;
+            transition-duration: 0.5s;
+            box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
+            color: black;
+        }
+        .heading .counter {
+            color: white;
+            background-color: red;
+            font-size: 1rem;
+            padding: 0.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            position: relative;
+            top: -3.5rem;
+            left: 9.5rem;
+            display: inline-block;
+            border-radius: 2rem;
+            text-align: center;
+            box-shadow: 0 0px 0.5rem rgba(0,0,0,0.25), 0 0px 0.25rem rgba(0,0,0,0.22);
+        }
         .skills {
             display: grid;
-            grid-template-columns: repeat(10, 1fr);
-            grid-template-rows: repeat(9, 50px);
-            gap: 10px;
+            grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+            grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+            grid-gap: 10px;
+            margin: auto;
+            padding: 2rem;
+            padding-bottom: 4rem;
+            max-width: 60vh;
+            width: 80vw;
+            height: 80vw;
+            max-height: 60vh;
+            position: relative;
+            z-index: 0;
+        }
+        .bubble {
+            border-radius: 25px;
+            background-color: white;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            transition-duration: 0.5s;
+            box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
+        }
+        .bubble div {
+            margin: -2.5%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 105%;
+            width: 105%;
+        }
+        .bubble .bubblelabel {
+            position: absolute;
+            width: 100%;
+            opacity: 1;
+            padding: 0.25vh 0;
+            height: 2.5vh;
+            bottom: 0;
+            text-align: center;
+            color: white;
+            font-size: 1.5vh;
+            background-color: rgba(0,0,0,0.7);
+        }
+        .section {
+            background-size: cover;
+            background-position: center;
+            z-index: -10;
+            margin: 0;
+            padding-left: 6rem;
         }
         .skill {
             display: flex;
@@ -312,11 +392,13 @@
         </div>
     </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div id="skills-grid" class="skills"></div>
+    <section id="skills" class="section" style="background-image: url('bg3.jpg'); ">
+        <div class="heading">
+            <div class="counter" id="skills-counter">15</div>
+            <i class="material-icons">equalizer</i>
+            Skills
         </div>
+        <div class="skills" id="skills-grid"></div>
     </section>
 
     <section id="experience">
@@ -379,21 +461,21 @@
         "objective": "Seeking an opportunity that would let me develop my skills and gain experience in fields like <b>Cloud Engineering, Software Archicture & Design, Applied Artificial Intelligence</b>, while working with a team of like-minded individuals to contribute towards impactful technology."
       },
       "skills": [
-        {"name": "Tensorflow", "image": "tf.png", "grid": "grid-column: 5 / 7; grid-row: 1 / 3"},
+        {"name": "C++", "image": "c.png", "grid": "grid-column: 5 / 7; grid-row: 1 / 3"},
         {"name": "Docker", "image": "docker.png", "grid": "grid-column: 3 / 5; grid-row: 1 / 3"},
         {"name": "Spark", "image": "spark.png", "grid": "grid-column: 3 / 4; grid-row: 5 / 6"},
         {"name": "Hadoop", "image": "hadoop.png", "grid": "grid-column: 1 / 2; grid-row: 4 / 5"},
-        {"name": "Keras", "image": "keras.jpg", "grid": "grid-column: 7 / 10; grid-row: 4 / 7"},
-        {"name": "Matlab", "image": "matlab.png", "grid": "grid-column: 1 / 3; grid-row: 5 / 7"},
+        {"name": "OpenAI", "image": "openai.jpg", "grid": "grid-column: 7 / 10; grid-row: 4 / 7"},
+        {"name": "Github Copilot", "image": "github-copilot.jpg", "grid": "grid-column: 1 / 3; grid-row: 5 / 7"},
         {"name": "OpenCV", "image": "opencv.png", "grid": "grid-column: 2 / 4; grid-row: 3 / 5"},
         {"name": "React", "image": "reactjs.png", "grid": "grid-column: 6 / 7; grid-row: 6 / 7"},
         {"name": "Python", "image": "python.png", "grid": "grid-column: 4 / 7; grid-row: 3 / 6"},
         {"name": "Google Cloud Platform", "image": "gcp.png", "grid": "grid-column: 6 / 8; grid-row: 7 / 9"},
-        {"name": "Amazon Web Services", "image": "aws.png", "grid": "grid-column: 3 / 6; grid-row: 6 / 9"},
+        {"name": "Redfish", "image": "DMTF_redfish.jpg", "grid": "grid-column: 3 / 6; grid-row: 6 / 9"},
         {"name": "EEGLab", "image": "eeglab.jpg", "grid": "grid-column: 1 / 3; grid-row: 7 / 9"},
         {"name": "JavaScript", "image": "js.png", "grid": "grid-column: 7 / 9; grid-row: 2 / 4"},
         {"name": "C", "image": "c.png", "grid": "grid-column: 2 / 3; grid-row: 2 / 3"},
-        {"name": "Redfish", "image": "DMTF_redfish.jpg", "grid": "grid-column: 8 / 10; grid-row: 7 / 9"}
+        {"name": "Amazon Web Services", "image": "aws.png", "grid": "grid-column: 8 / 10; grid-row: 7 / 9"}
       ],
       "experience": [
         {
@@ -655,12 +737,19 @@
 
             // Skills
             const skillsGrid = document.getElementById('skills-grid');
+            document.getElementById('skills-counter').textContent = data.skills.length;
             data.skills.forEach(skill => {
+                const bubble = document.createElement('div');
+                bubble.className = 'bubble';
+                bubble.style.cssText = skill.grid;
                 const div = document.createElement('div');
-                div.className = 'skill';
-                div.style.cssText = skill.grid;
-                div.innerHTML = `<img src="${skill.image}" alt="${skill.name}"><span>${skill.name}</span>`;
-                skillsGrid.appendChild(div);
+                div.style.backgroundImage = `url('${skill.image}')`;
+                const label = document.createElement('span');
+                label.className = 'bubblelabel';
+                label.textContent = skill.name;
+                bubble.appendChild(div);
+                bubble.appendChild(label);
+                skillsGrid.appendChild(bubble);
             });
 
             // Experience
