@@ -14,6 +14,7 @@
             background-color: #ffffff;
             color: #000000;
             line-height: 1.6;
+            transition-duration: 1s;
         }
         .container {
             max-width: 1200px;
@@ -25,7 +26,8 @@
             top: 0;
             width: 100%;
   			backdrop-filter: blur(10px);
-            background-color: rgba(0,0,0,0.1);
+            background-color: rgba(0,0,0,0.25);
+            color: white;
             border-bottom: 1px solid #cccccc;
             z-index: 1000;
             padding: 0 0;
@@ -50,7 +52,9 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: #000000;
+            text-shadow: #000000 0px 0px 10px;
+            /* color: #000000; */
+            color: white;
             transition: color 0.3s;
         }
         nav ul li a:hover {
@@ -106,7 +110,7 @@
             top: 50%;
             transform: translateY(-50%);
             color: #000000;
-            max-width: 350px;
+            max-width: 350px;            
         }
         .intro-label {
             font-size: 0.85em;
@@ -213,6 +217,80 @@
             margin: 0;
             padding-left: 6rem;
         }
+        .experiencecontainer {
+            margin: auto;
+            margin-top: 2rem;
+            width: 100vw;
+            max-width: 40rem;
+            position: relative;
+            left: 2rem;
+            padding: 0;
+            z-index: 0;
+            border-left: 0.1rem dotted rgba(255,255,255,0.5);
+        }
+        .experiencegrid {
+            width: 100%;
+            display: inline-grid;
+            margin-left: -2.5rem;
+            grid-template-areas: 'logoexp panel';
+            grid-template-columns: 7rem auto;
+            margin-bottom: 2rem;
+        }
+        .experience {
+            font-size: 1rem;
+            /* grid-area: panel; */
+            /* border-radius: 10px; */
+            padding: 0rem 1rem;
+            grid-row-start: 0;
+            grid-row-end: 0;
+            margin: 0;
+            /* box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22); */
+            /* background-color: rgba(0,0,0,0.3); */
+            /* backdrop-filter: blur(10px); */
+            -webkit-backdrop-filter: blur(10px);
+            color: black;
+            /* border: 1px solid rgba(255,255,255,0.1); */
+            border-left: 0.25rem solid rgba(0,0,0,0.1);
+            /* display: inline-grid; */
+            /* grid-template-areas: 'title title title title date' 'desc desc desc desc desc'; */
+            /* grid-template-columns: 20% 20% 10% 10% 40%; */
+            /* grid-template-rows: 3rem auto; */
+        }
+        .experience .datecontainer {
+            /* grid-area: date; */
+            /* text-align: right; */
+        }
+        .experience .date {
+            text-align: right;
+            border-radius: 1vh;
+            font-size: 0.8rem;
+            background-color: rgba(255,255,255,0.2);
+            padding: 0.5vh 1vh;
+            display: inline-block;
+        }
+        .experience .titleexp {
+            font-weight: 400;
+            grid-area: title;
+        }
+        .experience .company {
+            grid-area: company;
+            font-weight: 500;
+            /* padding: 0.5vh 0vh; */
+        }
+        .experience .desc {
+            grid-area: desc;
+            font-size: 1rem;
+        }
+        .logoexp {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 10rem;
+            grid-area: logoexp;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: white;
+            box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
+        }
         .skill {
             display: flex;
             flex-direction: column;
@@ -301,6 +379,15 @@
         {
             color: #007bff;
             margin: 0;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .contact-info a:hover {
+            /* text-decoration: none; */
+            text-decoration: underline;
+            color: #007bff;
         }
         @media (max-width: 768px) {
             #nav-toggle {
@@ -401,11 +488,12 @@
         <div class="skills" id="skills-grid"></div>
     </section>
 
-    <section id="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <div id="experience-list" class="experience"></div>
+    <section id="experience" class="section" style="background: rgba(0,0,0,0.2); background-size: cover; background-position: left center;">
+        <div class="heading">
+            <i class="material-icons">work</i>
+            Experience
         </div>
+        <div class="experiencecontainer" id="experience-list"></div>
     </section>
 
     <section id="projects">
@@ -479,8 +567,15 @@
       ],
       "experience": [
         {
+          "title": "Systems Software Engineer - 3",
+          "date": "Nov 2025 - Present",
+          "company": "Hewlett Packard Enterprise",
+          "description": "Software engineer in an agile team working in cloud-based management software for servers. Working to enable HPE Greenlake for Compute Ops Management on HPE Synergy and HPE ProLiant servers. Subject matter expert on Redfish standards and leading AI adoption in Compute Software Firmware Engineering(CSFE) Group, HPE.",
+          "logo": "hpe.jpg"
+        },
+        {
           "title": "Systems Software Engineer - 2",
-          "date": "July 2022 - Present",
+          "date": "July 2022 - Nov 2025",
           "company": "Hewlett Packard Enterprise",
           "description": "Software engineer in an agile team working in cloud-based management software for servers. Working to enable HPE Greenlake for Compute Ops Management on HPE Synergy and HPE ProLiant servers.",
           "logo": "hpe.jpg"
@@ -501,7 +596,7 @@
         },
         {
           "title": "Research Intern",
-          "date": "Jun 2019 - Present",
+          "date": "Jun 2019 - Nov 2019",
           "company": "Indian Institute of Science (IISc) Bangalore",
           "description": "Visualization of neural activity during motor imagery using CSP analysis. This was pursued at MILE (Medical Intelligence and Language Engineering) lab, under the guidance of Dr. A. G. Ramakrishnan and Jerrin Thomas Panachakel.",
           "logo": "iisc.jpg"
@@ -754,17 +849,45 @@
 
             // Experience
             const experienceList = document.getElementById('experience-list');
+            // document.getElementById('experience-counter').textContent = data.experience.length;
             data.experience.forEach(exp => {
-                const div = document.createElement('div');
-                div.className = 'item';
-                div.innerHTML = `
-                    <img src="${exp.logo}" alt="${exp.company}">
-                    <h3>${exp.title}</h3>
-                    <p class="date">${exp.date}</p>
-                    <p class="company">${exp.company}</p>
-                    <p>${exp.description.replace(/\n/g, '<br>')}</p>
-                `;
-                experienceList.appendChild(div);
+                const grid = document.createElement('div');
+                grid.className = 'experiencegrid';
+                
+                const logo = document.createElement('div');
+                logo.className = 'logoexp';
+                logo.style.backgroundImage = `url('${exp.logo}')`;
+                
+                const expDiv = document.createElement('div');
+                expDiv.className = 'experience';
+                
+                const titleDiv = document.createElement('div');
+                titleDiv.className = 'titleexp';
+                titleDiv.innerHTML = "<b>"+exp.title+"</b> @ <i>"+exp.company+"</i>";
+                
+                const dateContainer = document.createElement('div');
+                dateContainer.className = 'datecontainer';
+                const dateDiv = document.createElement('div');
+                dateDiv.className = 'date';
+                dateDiv.textContent = exp.date;
+                dateContainer.appendChild(dateDiv);
+                
+                const companyDiv = document.createElement('div');
+                companyDiv.className = 'company';
+                companyDiv.textContent = exp.company;
+                
+                const descDiv = document.createElement('div');
+                descDiv.className = 'desc';
+                descDiv.innerHTML = exp.description.replace(/\n/g, '<br>');
+                
+                expDiv.appendChild(titleDiv);
+                expDiv.appendChild(dateContainer);
+                // expDiv.appendChild(companyDiv);
+                expDiv.appendChild(descDiv);
+                
+                grid.appendChild(logo);
+                grid.appendChild(expDiv);
+                experienceList.appendChild(grid);
             });
 
             // Projects
