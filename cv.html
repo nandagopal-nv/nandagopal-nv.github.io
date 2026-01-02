@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nandagopal N V - CV</title>
     <style>
@@ -216,6 +217,7 @@
             z-index: -10;
             margin: 0;
             padding-left: 6rem;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
         }
         .experiencecontainer {
             margin: auto;
@@ -389,6 +391,115 @@
             text-decoration: underline;
             color: #007bff;
         }
+        .summary-dashboard {
+            margin: auto;
+            max-width: 1100px;
+            padding: 0 20px;
+        }
+        .summary-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+            width: 100%;
+        }
+        .summary-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: all 0.3s ease;
+            border-left: 5px solid #007bff;
+        }
+        .summary-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.2);
+            border-left-color: #0056b3;
+        }
+        .card-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #f0f4ff;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+        .card-icon i {
+            font-size: 32px;
+            color: #007bff;
+        }
+        .card-content {
+            flex: 1;
+        }
+        .card-value {
+            font-size: 2.5em;
+            font-weight: 700;
+            /* color: #007bff; */
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .card-label {
+            font-size: 0.95em;
+            color: #666;
+            font-weight: 500;
+        }
+        .summary-posts {
+            margin-top: 40px;
+        }
+        .summary-posts h3 {
+            font-size: 1.5em;
+            color: #000;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .post-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .post-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(0, 123, 255, 0.15);
+        }
+        .post-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #f0f0f0;
+        }
+        .post-content {
+            padding: 20px;
+        }
+        .post-date {
+            font-size: 0.85em;
+            color: #999;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .post-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        .post-description {
+            font-size: 0.95em;
+            color: #666;
+            line-height: 1.5;
+        }
         @media (max-width: 768px) {
             #nav-toggle {
                 display: block;
@@ -412,7 +523,7 @@
                 text-align: center;
             }
             #nav-menu li a {
-                display: block;
+                display: block; 
                 padding: 10px;
             }
             .personal {
@@ -450,18 +561,15 @@
 <body>
     <nav>
         <div class="container">
-            <h1>Nandagopal N V</h1>
+            <h1><a href="#personal" style="text-decoration: none; color: white;">Nandagopal N V</a></li></h1>
             <button id="nav-toggle" style="display: none; background: none; border: none; font-size: 1.5em; cursor: pointer;">&#9776;</button>
             <ul id="nav-menu">
-                <li><a href="#personal">Personal</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li>
+                <li><a href="#summary">Summary</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#courses">Courses</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#patents">Patents</a></li>
-                <li><a href="#awards">Awards</a></li>
             </ul>
         </div>
     </nav>
@@ -479,13 +587,44 @@
         </div>
     </section>
 
-    <section id="skills" class="section" style="background-image: url('bg3.jpg'); ">
+    <section id="summary" class="section" style="background: rgba(0,0,0,0.2); background-size: cover; background-position: left center;">
         <div class="heading">
-            <div class="counter" id="skills-counter">15</div>
-            <i class="material-icons">equalizer</i>
-            Skills
+            <i class="material-icons">dashboard</i>
+            Summary
         </div>
-        <div class="skills" id="skills-grid"></div>
+        <div class="summary-dashboard" id="summary-list">
+            <div class="summary-metrics">
+                <div class="summary-card">
+                    <div class="card-icon"><i class="material-icons">work</i></div>
+                    <div class="card-content">
+                        <div class="card-value" id="years-experience">5+</div>
+                        <div class="card-label">Years of Experience</div>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon"><i class="material-icons">copyright</i></div>
+                    <div class="card-content">
+                        <div class="card-value" id="patent-count">0</div>
+                        <div class="card-label">Patents</div>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon"><i class="material-icons">article</i></div>
+                    <div class="card-content">
+                        <div class="card-value" id="publication-count">0</div>
+                        <div class="card-label">Publications</div>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="card-icon"><i class="material-icons">format_quote</i></div>
+                    <div class="card-content">
+                        <div class="card-value" id="citation-count">0</div>
+                        <div class="card-label">Citations</div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-posts" id="summary-posts-container"></div>
+        </div>
     </section>
 
     <section id="experience" class="section" style="background: rgba(0,0,0,0.2); background-size: cover; background-position: left center;">
@@ -494,6 +633,15 @@
             Experience
         </div>
         <div class="experiencecontainer" id="experience-list"></div>
+    </section>
+
+    <section id="skills" class="section" style="background-image: url('bg3.jpg'); ">
+        <div class="heading">
+            <div class="counter" id="skills-counter">15</div>
+            <i class="material-icons">equalizer</i>
+            Skills
+        </div>
+        <div class="skills" id="skills-grid"></div>
     </section>
 
     <section id="projects">
@@ -623,6 +771,7 @@
           "logo": "pesu.png"
         }
       ],
+      "experience_years" : 5,
       "projects": [
         {
           "title": "Driver Drowsiness Detection",
@@ -773,14 +922,16 @@
           "conference": "2020 25th International Conference on Pattern Recognition (ICPR) · January 10, 2021 · IAPR",
           "authors": "Malaika Vijay, Nandagopal N V, Maanvi Nunna, Subramanyam Natarajan",
           "abstract": "This paper presents a two-stage, vision-based pipeline for the real-time detection of driver drowsiness using Facial Action Units (FAUs). FAUs capture movements in groups of muscles in the face like widening of the eyes or dropping of the jaw. The first stage of the pipeline employs a Convolutional Neural Network (CNN) trained to detect FAUs. The output of this network's penultimate layer serves as an image embedding that captures features relevant to FAU detection. These embeddings are then used to predict drowsiness using an Extreme Gradient Boosting (XGBoost) classifier. A separate XGBoost model is trained for each user of the system so that behavior specific to each user can be modeled into the drowsiness classifier. We show that user-specific classifiers require very little data and short training time to yield high prediction accuracies in real-time.",
-          "link": "https://www.micc.unifi.it/icpr2020/index.php/papers-and-authors/"
+          "link": "https://www.micc.unifi.it/icpr2020/index.php/papers-and-authors/",
+          "citations" : 15
         },
         {
           "title": "An Improved EEG Acquisition Protocol Facilitates Localized Neural Activation",
           "conference": "Advances in Communication Systems and Networks - Select Proceedings of ComNet 2019 · October 11, 2019 · Springer",
           "authors": "Nandagopal N V, Maanvi Nunna, Jerrin Thomas P, A G Ramakrishnan, Kanishka Sharma",
           "abstract": "This work proposes improvements in the electroencephalogram (EEG) recording protocols for motor imagery through the introduction of actual motor movement and/or somatosensory cues. The results obtained demonstrate the advantage of requiring the subjects to perform motor actions following the trials of imagery. By introducing motor actions in the protocol, the subjects are able to perform actual motor planning, rather than just visualizing the motor movement, thus greatly improving the ease with which the motor movements can be imagined. This study also probes the added advantage of administering somatosensory cues in the subject, as opposed to the conventional auditory/visual cues. These changes in the protocol show promise in terms of the aptness of the spatial filters obtained on the data, on application of the well known common spatial pattern (CSP) algorithms. The regions highlighted by the spatial filters are more localized and consistent across the subjects when the protocol is augmented with somatosensory stimuli. Hence, we suggest that this may prove to be a better EEG acquisition protocol for detecting brain activation in response to intended motor commands in (clinically) paralyzed/locked-in patients.",
-          "link": "https://www.semanticscholar.org/paper/An-Improved-EEG-Acquisition-Protocol-Facilitates-Panachakel-Vinayak/d15f471f2e6775d8d4eef97b794cff7cf6857726"
+          "link": "https://www.semanticscholar.org/paper/An-Improved-EEG-Acquisition-Protocol-Facilitates-Panachakel-Vinayak/d15f471f2e6775d8d4eef97b794cff7cf6857726",
+          "citations" : 17
         },
         {
           "title": "Flexible Automatic Evaluation of Dynamic and Static Properties of Code",
@@ -808,6 +959,20 @@
           "description": "Awarded 'Most Innovative Project' in the Intel AI competition held at PES University for the project 'Driver Drowsiness Detection using Facial Action Units'.",
           "logo": "intel.png"
         }
+      ],
+      "posts": [
+        {
+          "title": "Presented @ HPE TechCon 2025, Houston",
+          "date": "Mar 2025",
+          "content": "Had the opportunity to present my work on AI-integration in server management. This was one amongst only 18 other formal presentations at the event - with attendance from HPE technologists and executives worldwide. The presentation was well received and sparked interesting discussions on the future of AI in IT infrastructure management.",
+          "image": "TechCon2025_1.jpg"
+        },
+        {
+          "title": "Hackathon Winner @ HPE Compute Software Group 2025",
+          "date": "Jun 2025",
+          "content": "Won the Compute Software Group Hackathoon 2025. Led the team on a proof-of-concept for AI-assisted software development and proposed a roadmap for building domain knowledge infused AI assistants for software engineers in the CSFE group.",
+          "image": "hackathon_win2.jpg"
+        }
       ]
     }
     </script>
@@ -829,6 +994,86 @@
             document.getElementById('email-right').innerHTML = "<a href=\"mailto:" + data.personal.email + "\">" + data.personal.email + "</a>";
             document.getElementById('linkedin').innerHTML = "<a href=\"" + data.personal.linkedin + "\">"+data.personal.linkedinalias+"</a>";
             document.getElementById('objective').innerHTML = data.personal.objective;
+
+            // Summary
+            const calculateYearsOfExperience = () => {
+                // if (!data.experience || data.experience.length === 0) return 0;
+                
+                // // Get the most recent start date and oldest end date
+                // let startYear = new Date().getFullYear();
+                // let endYear = new Date().getFullYear();
+                
+                // data.experience.forEach(exp => {
+                //     // Parse date string like "Nov 2020 - July 2022" or "Jan 2020 - Nov 2020"
+                //     const dateRange = exp.date.split(' - ');
+                //     if (dateRange.length >= 1) {
+                //         const startDate = dateRange[0].trim();
+                //         const endDate = dateRange[1] ? dateRange[1].trim() : new Date().toLocaleString('en-US', { month: 'short', year: 'numeric' });
+                        
+                //         const startParts = startDate.split(' ');
+                //         const endParts = endDate.split(' ');
+                        
+                //         if (startParts.length >= 2) {
+                //             const expStartYear = parseInt(startParts[1]);
+                //             if (expStartYear < startYear) startYear = expStartYear;
+                //         }
+                        
+                //         if (endParts.length >= 2) {
+                //             const expEndYear = parseInt(endParts[1]);
+                //             if (expEndYear > endYear) endYear = expEndYear;
+                //         }
+                //     }
+                // });
+                
+                // return endYear - startYear;
+                return data.experience_years;
+            };
+            
+            const totalYears = calculateYearsOfExperience();
+            document.getElementById('years-experience').textContent = totalYears + '+';
+            
+            // Patents count
+            document.getElementById('patent-count').textContent = data.patents.count;
+            
+            // Publications count
+            const publicationCount = data.publications.length;
+            document.getElementById('publication-count').textContent = publicationCount;
+            
+            // Citations count
+            let totalCitations = 0;
+            data.publications.forEach(pub => {
+                if (pub.citations) {
+                    totalCitations += pub.citations;
+                }
+            });
+            document.getElementById('citation-count').textContent = totalCitations;
+            
+            // Posts section
+            if (data.posts && data.posts.length > 0) {
+                const postsContainer = document.getElementById('summary-posts-container');
+                const postsSection = document.createElement('div');
+                postsSection.innerHTML = '<h3>Events & Milestones</h3>';
+                const postsGrid = document.createElement('div');
+                postsGrid.className = 'posts-grid';
+                
+                data.posts.forEach(post => {
+                    const postCard = document.createElement('div');
+                    postCard.className = 'post-card';
+                    const imageHTML = post.image ? `<img src="${post.image}" alt="${post.title}" class="post-image">` : '';
+                    postCard.innerHTML = `
+                        ${imageHTML}
+                        <div class="post-content">
+                            <div class="post-date">${post.date}</div>
+                            <div class="post-title">${post.title}</div>
+                            <div class="post-description">${post.content}</div>
+                        </div>
+                    `;
+                    postsGrid.appendChild(postCard);
+                });
+                
+                postsSection.appendChild(postsGrid);
+                postsContainer.appendChild(postsSection);
+            }
 
             // Skills
             const skillsGrid = document.getElementById('skills-grid');
