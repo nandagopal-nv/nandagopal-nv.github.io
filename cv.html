@@ -364,6 +364,26 @@
             border-radius: 4px;
             font-size: 0.8em;
         }
+        .project-links {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #dee2e6;
+        }
+        .project-link {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        .project-link:hover {
+            background-color: #0056b3;
+            text-decoration: none;
+        }
         .project img {
             width: 100px;
             height: 100px;
@@ -646,42 +666,54 @@
 
     <section id="projects">
         <div class="container">
-            <h2>Projects</h2>
+            <div class="heading">
+                <i class="material-icons">interests</i>
+                Projects
+            </div>
             <div id="projects-list" class="projects"></div>
         </div>
     </section>
 
-    <section id="courses">
+    <!-- <section id="courses">
         <div class="container">
             <h2>Courses</h2>
             <div id="courses-list" class="courses"></div>
         </div>
-    </section>
+    </section> -->
 
     <section id="education">
         <div class="container">
-            <h2>Education</h2>
+            <div class="heading">
+                <i class="material-icons">work</i>
+                Education
+            </div>
             <div id="education-list" class="education"></div>
         </div>
     </section>
 
     <section id="publications">
         <div class="container">
-            <h2>Publications</h2>
+            <div class="heading">
+                <i class="material-icons">article</i>
+                Publications
+            </div>
             <div id="publications-list" class="publications"></div>
         </div>
     </section>
 
-    <section id="patents">
+    <!-- <section id="patents">
         <div class="container">
             <h2>Patents</h2>
             <div id="patents-content" class="patents"></div>
         </div>
-    </section>
+    </section> -->
 
     <section id="awards">
         <div class="container">
-            <h2>Awards</h2>
+             <div class="heading">
+                <i class="material-icons">workspace_premium</i>
+                Awards
+            </div>
             <div id="awards-list" class="awards"></div>
         </div>
     </section>
@@ -773,6 +805,22 @@
       ],
       "experience_years" : 5,
       "projects": [
+        {
+          "title": "Single SaaS-based license for iLO and COM",
+          "tags": ["User Experience", "Server Management", "Cloud Engineering"],
+          "content": "As part of the iLO team at HPE, I worked on creating a new subscription-license framework within iLO that allows COM to remotely manage the server license once the server is onboarded to HPE Greenlake for Compute Ops Management. This involved working closely with cross-functional teams to design and implement the license activation flow, ensuring seamless integration between iLO and COM. This project enabled a unified licensing experience for customers, simplifying license management across HPE's server portfolio.",
+          "cover": "hpe_com.jpg",
+          "link" : "https://support.hpe.com/hpesc/public/docDisplay?docId=sd00001293en_us&page=GUID-1BC3DBA5-D56C-49B5-BCB3-DDFFC02B6C79.html&docLocale=en_US",
+          "award": true
+        },
+        {
+          "title": "Improved onboarding experience for iLO to connect to HPE Compute Ops Management ",
+          "tags": ["User Experience", "Server Management", "Cloud Engineering"],
+          "content": "As part of the HPE Greenlake for Compute Ops Management team, I worked on improving the onboarding experience for new users on iLO web interface. This involved redesigning the onboarding flow to make it more intuitive and user-friendly, resulting in a 20% increase in successful onboarding rates. I collaborated closely with UX designers and front-end developers to implement these changes using React and modern web technologies.",
+          "cover": "hpe_com.jpg",
+          "link" : "https://support.hpe.com/hpesc/public/videoDisplay?videoId=vpsg00005639en_us",
+          "award": true
+        },
         {
           "title": "Driver Drowsiness Detection",
           "tags": ["Artificial Intelligence", "Computer Vision", "Machine Learning"],
@@ -970,8 +1018,29 @@
         {
           "title": "Hackathon Winner @ HPE Compute Software Group 2025",
           "date": "Jun 2025",
-          "content": "Won the Compute Software Group Hackathoon 2025. Led the team on a proof-of-concept for AI-assisted software development and proposed a roadmap for building domain knowledge infused AI assistants for software engineers in the CSFE group.",
+          "content": "Won the Compute Software Group Hackathon 2025. Led the team on a proof-of-concept for AI-assisted software development and proposed a roadmap for building domain knowledge infused AI assistants for software engineers in the CSFE group.",
           "image": "hackathon_win2.jpg"
+        },
+        {
+          "title": "HPE Compute Software Firmware Engineering Star",
+          "date": "Jun 2025",
+          "issuer": "VP & India Site Lead - HPE Compute Software Group",
+          "content": "Awarded CSFE Star in recognition of outstanding performance and contributions to the HPE Compute Software Firmware Engineering (CSFE) Group. This was awarded for my contributions towards introducing the new subscription based licensing model for iLO servers connected to Compute Ops Management (COM). This was a key milestone in HPE's strategy to improve attach rate of COM for HPE ProLiant servers.",
+          "image": "top_gun_badge.png"
+        },
+        {
+          "title": "HPE Compute Software Group 'Top Gun'",
+          "date": "Sep 2024",
+          "issuer": "SVP & GM - HPE Compute Software Group",
+          "content": "Awarded 'Top Gun' in recognition of outstanding performance and contributions to the HPE Compute Software Group. This was awarded for my contributions towards improving the onboarding experience of HPE servers to Compute Ops Management (COM). This feature was crucial in the HPE-Compute strategy to improve adoption of COM for HPE ProLiant servers.",
+          "image": "top_gun_badge.png"
+        },
+        {
+          "title": "HPE HOPE 2024 DEI Champion",
+          "date": "Nov 2024",
+          "issuer": "HPE India Diversity, Equity & Inclusion (DEI) Council",
+          "content": "Awarded the 'HOPE 2024 DEI Champion' for my contributions towards fun and engagement activities in Compute. This award recognized core team members from Team-Fungage. I have been an active member of the Compute Fungage team since its inception in 2022.",
+          "image": "hope2024.png"
         }
       ]
     }
@@ -1142,16 +1211,19 @@
                 div.className = 'item project';
                 const tags = proj.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
                 const cover = proj.cover ? `<img src="${proj.cover}" alt="${proj.title}">` : '';
+                const linkSection = proj.link ? `<div class="project-links"><a href="${proj.link}" target="_blank" class="project-link">View Project</a></div>` : '';
                 div.innerHTML = `
                     ${cover}
                     <h3>${proj.title}</h3>
                     <div class="tags">${tags}</div>
                     <p>${proj.content.replace(/\n/g, '<br>')}</p>
+                    ${linkSection}
                 `;
                 projectsList.appendChild(div);
             });
 
             // Courses
+            /*
             const coursesList = document.getElementById('courses-list');
             data.courses.forEach(course => {
                 const div = document.createElement('div');
@@ -1159,7 +1231,7 @@
                 div.textContent = course;
                 coursesList.appendChild(div);
             });
-
+            */
             // Education
             const educationList = document.getElementById('education-list');
             data.education.forEach(edu => {
@@ -1189,8 +1261,8 @@
                 publicationsList.appendChild(div);
             });
 
-            // Patents
-            document.getElementById('patents-content').innerHTML = `<p>I have ${data.patents.count} patents.</p>`;
+            // // Patents
+            // document.getElementById('patents-content').innerHTML = `<p>I have ${data.patents.count} patents.</p>`;
 
             // Awards
             const awardsList = document.getElementById('awards-list');
