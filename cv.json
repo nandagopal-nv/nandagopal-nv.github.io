@@ -1,0 +1,263 @@
+{
+  "personal": {
+    "name": "Nandagopal N V",
+    "title": "Cloud Engineer",
+    "email": "nandagopal.netrakanti@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/nandagopal-nv/",
+    "objective": "Seeking an opportunity that would let me develop my skills and gain experience in fields like <b>Cloud Engineering, Software Archicture & Design, Artificial Intelligence,</b> while working with a team of like-minded individuals to contribute towards impactful technology."
+  },
+  "skills": [
+    {"name": "Tensorflow", "image": "tf.png", "grid": "grid-column: 5 / 7; grid-row: 1 / 3"},
+    {"name": "Docker", "image": "docker.png", "grid": "grid-column: 3 / 5; grid-row: 1 / 3"},
+    {"name": "Spark", "image": "spark.png", "grid": "grid-column: 3 / 4; grid-row: 5 / 6"},
+    {"name": "Hadoop", "image": "hadoop.png", "grid": "grid-column: 1 / 2; grid-row: 4 / 5"},
+    {"name": "Keras", "image": "keras.jpg", "grid": "grid-column: 7 / 10; grid-row: 4 / 7"},
+    {"name": "Matlab", "image": "matlab.png", "grid": "grid-column: 1 / 3; grid-row: 5 / 7"},
+    {"name": "OpenCV", "image": "opencv.png", "grid": "grid-column: 2 / 4; grid-row: 3 / 5"},
+    {"name": "React", "image": "reactjs.png", "grid": "grid-column: 6 / 7; grid-row: 6 / 7"},
+    {"name": "Python", "image": "python.png", "grid": "grid-column: 4 / 7; grid-row: 3 / 6"},
+    {"name": "Google Cloud Platform", "image": "gcp.png", "grid": "grid-column: 6 / 8; grid-row: 7 / 9"},
+    {"name": "Amazon Web Services", "image": "aws.png", "grid": "grid-column: 3 / 6; grid-row: 6 / 9"},
+    {"name": "EEGLab", "image": "eeglab.jpg", "grid": "grid-column: 1 / 3; grid-row: 7 / 9"},
+    {"name": "JavaScript", "image": "js.png", "grid": "grid-column: 7 / 9; grid-row: 2 / 4"},
+    {"name": "C", "image": "c.png", "grid": "grid-column: 2 / 3; grid-row: 2 / 3"},
+    {"name": "Redfish", "image": "DMTF_redfish.jpg", "grid": "grid-column: 8 / 10; grid-row: 7 / 9"}
+  ],
+  "experience": [
+    {
+      "title": "Systems Software Engineer - 2",
+      "date": "July 2022 - Present",
+      "company": "Hewlett Packard Enterprise",
+      "description": "Software engineer in an agile team working in cloud-based management software for servers. Working to enable HPE Greenlake for Compute Ops Management on HPE Synergy and HPE ProLiant servers.",
+      "logo": "hpe.jpg"
+    },
+    {
+      "title": "Systems Software Engineer",
+      "date": "Nov 2020 - July 2022",
+      "company": "Hewlett Packard Enterprise",
+      "description": "Software engineer in an agile team working on server Baseboard Management Controller (BMC) software. Working on open standards like DMTF's Redfish standard for management of converged, hybrid IT and Software Defined Data Centers(SDDC).",
+      "logo": "hpe.jpg"
+    },
+    {
+      "title": "R&D Intern",
+      "date": "Jan 2020 - Nov 2020",
+      "company": "Hewlett Packard Enterprise",
+      "description": "Optimizing data encoding / decoding for servers to make it AI ready’. This project involved the design and development of a federated data logging system in which data definitions used by a generic parser to encode and decode data. This federated registry makes data better structured and documented for use in an AI algorithm that can optimise server parameters such as for performance, security, usage etc.\nI am responsible for the development of the complete stack required for creating/editing/viewing data definitions. This internship gave me experience in using frameworks such as React, Visual Studio, ElasticSearch, Flask, Python etc. I gained exposure to AGILE methods, industry development standards and professional team culture",
+      "logo": "hpe.jpg"
+    },
+    {
+      "title": "Research Intern",
+      "date": "Jun 2019 - Present",
+      "company": "Indian Institute of Science (IISc) Bangalore",
+      "description": "Visualization of neural activity during motor imagery using CSP analysis. This was pursued at MILE (Medical Intelligence and Language Engineering) lab, under the guidance of Dr. A. G. Ramakrishnan and Jerrin Thomas Panachakel.",
+      "logo": "iisc.jpg"
+    },
+    {
+      "title": "Subject Matter Expert (SME) for Artificial Intelligence",
+      "date": "Jan 2019 - May 2019",
+      "company": "PESU I/O",
+      "description": "PESU I/O is a program running in PES University where Sophomore(2nd year)/Junior(3rd year) students teach freshmen(1st year) students a course for a period of 5 weeks. <br>\n\nI taught an Introductory Course on Artificial Intelligence for slot 6 as part of the PESU I/O peer teaching initiative.\n\nMy experience as a Subject Matter Expert(SME) on AI included curating content for the course, developing assignments and delivering hands-on sessions. This course had a total of 31 registrations.",
+      "logo": "pesuio.jpg"
+    },
+    {
+      "title": "Summer Intern",
+      "date": "Jun 2018 - Aug 2018",
+      "company": "Ayotta Technologies · PES University",
+      "description": "Developed a modular tool (Flexible automatic code evaluator platform) that carries out automatic evaluation of code in any programming language.",
+      "logo": "ayotta.png"
+    },
+    {
+      "title": "Summer Intern",
+      "date": "Jun 2017 - Aug 2017",
+      "company": "Center for Data Science and Applied Machine Learning (CDSAML) · PES University",
+      "description": "3D scene generation using natural language text description",
+      "logo": "pesu.png"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Driver Drowsiness Detection",
+      "tags": ["Artificial Intelligence", "Computer Vision", "Machine Learning"],
+      "content": "This was pursued as part of a competition held by Intel Corporation in PES University - the work for which we were awarded 'Most Innovative Project'.\nThe pipeline developed explores the use of Facial Action Units(FAUs, representing micro-expressions in the face) to infer drowsiness in a subject.",
+      "cover": "adas.jpg",
+      "award": true
+    },
+    {
+      "title": "Decoding Imagined Speech from EEG",
+      "tags": ["Deep Learning", "BCI", "Signal Processing"],
+      "content": "This was pursued as part of our final year project at PES University.\nThis work explores the development of a deep learning approach to classifying imagined words from EEG Data. This gave us exposure to the application of deep learning models such as Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), Auto Encoders. It also gave us the experience of handling the various challenges that come with working with EEG Data and the neuroscience background that this problem statement demands.",
+      "cover": "eeglab.jpg",
+      "award": false
+    },
+    {
+      "title": "Optimizing encoding / decoding of data for servers to make it AI ready",
+      "tags": ["Cloud Computing", "Full-stack", "Systems engineering"],
+      "content": "This was pursued as part of my internship at Hewlett Packard Enterprise.\nThis project attempts to introduce a generic parser that could handle all kinds of log data. Naturally, this parser would now require some meta-data to be maintained for each logger, using which it would be able to encode and decode data.",
+      "cover": "eeglab.jpg",
+      "award": false
+    },
+    {
+      "title": "Visualization of Motor Imagery using Common Spatial Pattern Analysis",
+      "tags": ["BCI", "Signal Processing", "Brain Research"],
+      "content": "This was pursued as part of the internship at MILE Lab, IISc in the summer of 2019.\nThis work explored analysis of EEG data using CSP during motor imagery in subjects. A novel protocol was developed that introduces improvements to the quality of imagery visualized by the subjects.",
+      "cover": "eeglab.jpg",
+      "award": false,
+      "publication": true
+    },
+    {
+      "title": "Container Orchestrator Service using Docker",
+      "tags": ["Cloud Computing", "Operating Systems", "Distributed Computing"],
+      "content": "This was pursued as part of the course project for Cloud Computing.\nThe goal of this project was to implement from scratch- policies for Auto-scaling, Fault-tolerance and Scheduling using Docker's container APIs and Python-Flask. The product was deployed on Amazon EC2 instances and was built to support an image-focused web-app that featured selfless acts done by people.",
+      "cover": "docker.png",
+      "award": false
+    },
+    {
+      "title": "Built a compiler from scratch using Python Lex-Yacc (PLY)",
+      "tags": ["Compiler Design"],
+      "content": "The objective of the project was to gain exposure for the intricacies of designing a compiler for a programming language like C. The project included lexical analysis, syntax validation, semantic analysis, intermediate code generation and code optimizations. This was pursued as part of a course project for the Compiler Design course.",
+      "cover": "python.png",
+      "award": false
+    },
+    {
+      "title": "Cloud Computing Project using AWS(Amazon Web Services)",
+      "tags": ["Cloud Computing", "Cyber security", "AWS"],
+      "content": "'Understand the security tools landscape to develop secure applications and monitor applications continuously'\n\nThis was a project pursued as part of HPE's CTY(Catch Them Young) program.",
+      "cover": "aws.png",
+      "award": false
+    },
+    {
+      "title": "Facial Emotion Recognition using 2 stage learning",
+      "tags": ["Computer Vision", "Machine Learning", "Image Processing"],
+      "content": "'Develop a pipeline that uses machine learning to identify emotions in an image of a face'\n\nThis work developed a pipeline for recognition of emotion based on an image of the face. This was done in two stages.\n1. Features were extracted from the face using a bank of Gabor Filters at different spatial frequencies and orientations. These features were used to train Facial Action Unit(FAU) Classifiers that identify the presence of micro-expressions in the face. These classifiers were Support Vector Machines(SVMs) used to produce probabilities representing the intensities with which the FAUs are present in the face.\n2. A decision tree was trained to make use of these scores to classify the emotion seen in the face.\nThis was pursued as part of a course project for the Machine Learning course.",
+      "cover": "face.jpg",
+      "award": false
+    },
+    {
+      "title": "Built a Recommendation engine on textual reviews",
+      "tags": ["Natural Language Processing", "Machine Learning", "Artificial Intelligence"],
+      "content": "'Building a movie recommendation system based on sentiment analysis on movie reviews'\nThis was pursued as part of the course project for NLP elective.",
+      "cover": "nlp.jpg",
+      "award": false
+    },
+    {
+      "title": "Building an AI system that can play UNO",
+      "tags": ["Artificial Intelligence"],
+      "content": "This project was scoped to include a complete system, including game logic, UI and the AI algorithm for allowing a player-vs-computer mode. The AI was an expert system, built specifically to play the game of UNO. This was pursued as part of a course project for the AI elective.",
+      "cover": "uno.jpg",
+      "award": false
+    },
+    {
+      "title": "Cricket Match Predictor using Spark MLIB and Hadoop (HDFS)",
+      "tags": ["Cloud Computing", "Operating Systems", "Distributed Computing"],
+      "content": "'Building a cricket match score predictor service using Spark's MLIB and HDFS'\n\nThis project involved the use of HDFS (Hadoop File System) along with Spark's MLIB using Scala.\nThe scope of the project was to build a predictor service that can simulate a cricket match based on the team line-ups, past performance, venue etc. The service would perform over-wise simulation and accordingly predict a winner for the match. The dataset used was the IPL dataset available on Kaggle.\nThis was a course project as part of the Big Data elective in college.",
+      "cover": "bigdata.jpg",
+      "award": false
+    },
+    {
+      "title": "Flexible Automatic Code Evaluator Platform",
+      "tags": ["Cloud Computing", "Operating Systems", "Distributed Computing"],
+      "content": "'To develop a flexible platform that enables automatic evaluation of student coding assignments'\n\nThe product was built to allow assignments to be configurable, with options on - language of evaluation, marks, time limits, static analysis etc.\nThis product was deployed in the university for automatic evaluation of coding assignments in minor labs - 'Data Structures with C' and 'DBMS with MySQL'.\nThis was developed as part of an internship during the summer of 2018.",
+      "cover": "compiler.jpg",
+      "award": false,
+      "publication": true
+    },
+    {
+      "title": "Motion Controlled Mouse app for Android phones",
+      "tags": ["Cloud Computing", "Operating Systems", "Distributed Computing"],
+      "content": "'Develop a motion controlled mouse using an Android phone'\n\nThis was a curiosity driven project to explore the possibility of using an Android phone's gyro sensor to control the cursor of a Windows computer. The application was developed using Python Flask and Python Windows API.",
+      "cover": "",
+      "award": false
+    },
+    {
+      "title": "Raspberry Pi powered Smart Speaker with Google Assistant",
+      "tags": ["Cloud Computing", "Operating Systems", "Distributed Computing"],
+      "content": "To build a Raspberry Pi powered smart speaker using Google Assistant API'\n\nThis was pursued as part of a course project for the Microprocessor and Computer Architecture(MPCA) course. The objective was to build a product with some hardware integration. This was mostly an opportunity for us to explore the Raspberry Pi platform. This project used a Raspberry Pi 3B with Raspbian.",
+      "cover": "",
+      "award": false
+    }
+  ],
+  "courses": [
+    "Artificial Intelligence",
+    "Topics in Deep Learning",
+    "Machine Learning",
+    "Introduction to Data Science",
+    "Natural Language Processing",
+    "Big Data",
+    "Cloud Computing",
+    "Design and Analysis of Algorithms",
+    "Introduction to Operating Systems",
+    "Data Structures with C",
+    "Python",
+    "Web Technologies",
+    "Microprocessors and Computer Architecture",
+    "Theory of Computing",
+    "DBMS",
+    "Computer Networks",
+    "Software Engineering"
+  ],
+  "education": [
+    {
+      "title": "B. Tech in Computer Science and Engineering (CSE)",
+      "date": "2016 - 2020",
+      "company": "PES University",
+      "description": "Specialization in Data Science",
+      "logo": "pesu.png"
+    },
+    {
+      "title": "Class XI - XII, Pre University of Karnataka",
+      "date": "2014 - 2016",
+      "company": "Deeksha Center for Learning",
+      "description": "Physics, Chemistry, Mathematics and Computer Science (PCMC)",
+      "logo": "deeksha.png"
+    },
+    {
+      "title": "Class X, ICSE",
+      "date": "2014",
+      "company": "New Horizon Public School",
+      "description": "",
+      "logo": "nhps.png"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Real-Time Driver Drowsiness Detection Using Facial Action Units",
+      "conference": "2020 25th International Conference on Pattern Recognition (ICPR) · January 10, 2021 · IAPR",
+      "authors": "Malaika Vijay, Nandagopal N V, Maanvi Nunna, Subramanyam Natarajan",
+      "abstract": "This paper presents a two-stage, vision-based pipeline for the real-time detection of driver drowsiness using Facial Action Units (FAUs). FAUs capture movements in groups of muscles in the face like widening of the eyes or dropping of the jaw. The first stage of the pipeline employs a Convolutional Neural Network (CNN) trained to detect FAUs. The output of this network's penultimate layer serves as an image embedding that captures features relevant to FAU detection. These embeddings are then used to predict drowsiness using an Extreme Gradient Boosting (XGBoost) classifier. A separate XGBoost model is trained for each user of the system so that behavior specific to each user can be modeled into the drowsiness classifier. We show that user-specific classifiers require very little data and short training time to yield high prediction accuracies in real-time.",
+      "link": "https://www.micc.unifi.it/icpr2020/index.php/papers-and-authors/"
+    },
+    {
+      "title": "An Improved EEG Acquisition Protocol Facilitates Localized Neural Activation",
+      "conference": "Advances in Communication Systems and Networks - Select Proceedings of ComNet 2019 · October 11, 2019 · Springer",
+      "authors": "Nandagopal N V, Maanvi Nunna, Jerrin Thomas P, A G Ramakrishnan, Kanishka Sharma",
+      "abstract": "This work proposes improvements in the electroencephalogram (EEG) recording protocols for motor imagery through the introduction of actual motor movement and/or somatosensory cues. The results obtained demonstrate the advantage of requiring the subjects to perform motor actions following the trials of imagery. By introducing motor actions in the protocol, the subjects are able to perform actual motor planning, rather than just visualizing the motor movement, thus greatly improving the ease with which the motor movements can be imagined. This study also probes the added advantage of administering somatosensory cues in the subject, as opposed to the conventional auditory/visual cues. These changes in the protocol show promise in terms of the aptness of the spatial filters obtained on the data, on application of the well known common spatial pattern (CSP) algorithms. The regions highlighted by the spatial filters are more localized and consistent across the subjects when the protocol is augmented with somatosensory stimuli. Hence, we suggest that this may prove to be a better EEG acquisition protocol for detecting brain activation in response to intended motor commands in (clinically) paralyzed/locked-in patients.",
+      "link": "https://www.semanticscholar.org/paper/An-Improved-EEG-Acquisition-Protocol-Facilitates-Panachakel-Vinayak/d15f471f2e6775d8d4eef97b794cff7cf6857726"
+    },
+    {
+      "title": "Flexible Automatic Evaluation of Dynamic and Static Properties of Code",
+      "conference": "2018 IEEE Tenth International Conference on Technology for Education (T4E) · December 1, 2018 · IEEE",
+      "authors": "Nandagopal N V, Swathi Reddy, Shruthi Chandrashekar, N S Kumar",
+      "abstract": "For computer-based assignments, students are typically expected to create programs or code-like artefacts. Such code is often evaluated on multiple parameters including functional correctness, running time, compliance with good coding practices, etc. In this paper, we present a flexible tool that not only evaluates the code's dynamic properties (functional correctness, running time, etc) but also its static properties (such as use of good programming style). Unlike existing tools, the specifics of the execution criteria (like language, result type, etc) are fed to the tool. This makes it a lot more configurable, allowing instructors to specify commands to run code in any language and define customized algorithms for output verification. We demonstrate the flexibility of our tool in two different contexts: for evaluating lab work in a course on Data Structures in C, and for evaluating assignments in SQL.",
+      "link": "https://ieeexplore.ieee.org/document/8590145"
+    }
+  ],
+  "patents": {
+    "count" : 2
+  },
+  "awards": [
+    {
+      "title": "HPE Compute Software Group 'Top Gun'",
+      "date": "2024",
+      "issuer": "VP & GM - HPE Compute Software Group",
+      "description": "Awarded 'Top Gun' in recognition of outstanding performance and contributions to the HPE Compute Software Group.",
+      "logo": "intel.png"
+    },
+    {
+      "title": "Most Innovative Project - Intel AI Competition",
+      "date": "2019",
+      "issuer": "Intel Corporation",
+      "description": "Awarded 'Most Innovative Project' in the Intel AI competition held at PES University for the project 'Driver Drowsiness Detection using Facial Action Units'.",
+      "logo": "intel.png"
+    }
+  ]
+}
