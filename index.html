@@ -183,6 +183,22 @@
             position: relative;
             z-index: 0;
         }
+        .skills-description-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 25px;
+            margin: auto;
+            margin-bottom: 30px;
+            max-width: 800px;
+            width: 80vw;
+            color: #000000;
+            font-size: 1rem;
+            line-height: 1.6;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
         .bubble {
             border-radius: 25px;
             background-color: white;
@@ -657,11 +673,12 @@
 
     <section id="skills" class="section" style="background-image: url('bg3.jpg'); ">
         <div class="heading">
-            <div class="counter" id="skills-counter">15</div>
+            <!-- <div class="counter" id="skills-counter">15</div> -->
             <i class="material-icons">equalizer</i>
             Skills
         </div>
-        <div class="skills" id="skills-grid"></div>
+        <div class="skills-description-card" id="skills-description-card"></div>
+            <div class="skills" id="skills-grid"></div>
     </section>
 
     <section id="projects">
@@ -745,12 +762,13 @@
         {"name": "C", "image": "c.png", "grid": "grid-column: 2 / 3; grid-row: 2 / 3"},
         {"name": "Amazon Web Services", "image": "aws.png", "grid": "grid-column: 8 / 10; grid-row: 7 / 9"}
       ],
+      "skills_description": "I am proficient in <b>C, C++, Python and Javascript</b> programming languages. I believe strongly in the scientific method and <b>focus on design and architecture</b>. I have <b>excellent communication skills</b> and this allows me to deliver <b>high quality presentations</b> to diverse audiences. <br><br>I am a fast learner and dabble in various domains like <b>Cloud Engineering, Data Science, Applied AI</b> and <b>Software Architecture & Design</b>. <br><br> With my strong foundation in computer science and a <b>specialization in Data Science</b>, I am also well-versed with machine learning algorithms and AI techniques. I have worked with deep learning models in an academic capacity and have research papers in <b>top-tier conferences like ICPR</b> - with <b>15+ citations</b>.<br><br> I have experience working with cloud platforms like <b>Google Cloud Platform (GCP)</b> and <b>Amazon Web Services (AWS)</b>. I have worked on deploying applications using <b>Docker containers</b> and have experience working with big data tools like <b>Hadoop and Spark</b>. More recently, I have been exploring the use of <b>Generative-AI tools like GitHub Copilot, ChatHPE, OpenAI (with python)</b> in product integration and development workflows.",
       "experience": [
         {
           "title": "Systems Software Engineer - 3",
           "date": "Nov 2025 - Present",
           "company": "Hewlett Packard Enterprise",
-          "description": "Software engineer in an agile team working in cloud-based management software for servers. Working to enable HPE Greenlake for Compute Ops Management on HPE Synergy and HPE ProLiant servers. Subject matter expert on Redfish standards and leading AI adoption in Compute Software Firmware Engineering(CSFE) Group, HPE.",
+          "description": "I am the subject matter expert on <b>Redfish Standards and Conformance</b>. I am amongst a very small group of experts on Redfish and consistently provide technical inputs to developers and architects on how iLO features can be modelled to be compliant with the Redfish specification. \n\nI also own the iLO Cloudconnect module that <b>enables HPE iLO to connect to HPE Compute Ops Management (COM)</b>. I have been delivering multiple features in the iLO-COM integration space. I strive for high quality of delivery through <b>thorough unit-testing and well-written documentation</b> artifacts. \n\n I have been working on integrating AI tools like GitHub Copilot, ChatHPE into our development workflows to improve productivity and code quality. I have also been <b>evangelizing the use of AI tools</b> within the team through workshops and training sessions in the Compute Software Firmware Engineering(CSFE) Group, HPE. \n\n I <b>lead the innovation initiatives</b> in my team and mentor junior and senior engineers on developing and refining ideas for hackathons, patents and publications. \n\n I also <b>own the iLO REST API documentation</b>. This is actually an initiative that I started as a proof of concept to automate the generation of REST API docs from Redfish schema files. This has now been adopted as the official documentation process for iLO REST APIs.",
           "logo": "hpe.jpg"
         },
         {
@@ -1026,7 +1044,7 @@
           "date": "Jun 2025",
           "issuer": "VP & India Site Lead - HPE Compute Software Group",
           "content": "Awarded CSFE Star in recognition of outstanding performance and contributions to the HPE Compute Software Firmware Engineering (CSFE) Group. This was awarded for my contributions towards introducing the new subscription based licensing model for iLO servers connected to Compute Ops Management (COM). This was a key milestone in HPE's strategy to improve attach rate of COM for HPE ProLiant servers.",
-          "image": "top_gun_badge.png"
+          "image": "experience2.jpg"
         },
         {
           "title": "HPE Compute Software Group 'Top Gun'",
@@ -1146,8 +1164,12 @@
 
             // Skills
             const skillsGrid = document.getElementById('skills-grid');
-            document.getElementById('skills-counter').textContent = data.skills.length;
-            data.skills.forEach(skill => {
+            // document.getElementById('skills-counter').textContent = data.skills.length;
+            
+            // Populate skills description card
+            const skillsDescriptionCard = document.getElementById('skills-description-card');
+            skillsDescriptionCard.innerHTML = data.skills_description;
+                        data.skills.forEach(skill => {
                 const bubble = document.createElement('div');
                 bubble.className = 'bubble';
                 bubble.style.cssText = skill.grid;
@@ -1282,4 +1304,3 @@
     </script>
 </body>
 </html></content>
-<parameter name="filePath">c:\Users\user\Downloads\Repos\nandagopal-nv.github.io\cv.html
